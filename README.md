@@ -35,3 +35,13 @@ Descargamos la imagen del PrestaShop, añadimos puertos (para este 80:80), le a�
         depends_on: 
             - mysql
 ```
+
+## Eliminar la carpeta Install
+
+Por motivos de seguridad es necesario eliminar la carpeta install del contenedor de Prestashop , por lo que necesitaremos acceder a ese contendor , los pasos son:
+
+1. En la máquina de Docker escribir *docker ps* para ver el numero del contenedor
+2. Accedemos a ella utilizando *sudo docker exec -it XX /bin/bash* (donde XX son los dos primeros dígitos de mi contenedor)
+3. Accedemos a la carpeta /var/www/html 
+4. Eliminamos la carpeta install utilizando *rm -rf install*
+5. Iniciamos sesión
