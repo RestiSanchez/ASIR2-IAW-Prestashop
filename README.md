@@ -2,7 +2,7 @@
 
 Siguiendo con la práctica 15, haremos exactamente lo mismo pero la diferencia es que en vez de instalar Wordpress instalaremos PrestaShop.
 
-**OJO**
+##**OJO**
 Importante añadirle 2GB de RAM a nuestra máquina, en caso contrario no realizará correctamente la instalación
 
 Nuestro archivo docker-compose.yml instalaremos:
